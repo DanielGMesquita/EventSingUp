@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-theme: #48C5CE;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: auto;
+    width: clamp(12rem, 12rem + 70vw, 100rem);
+}
+
+.container{
+    margin:auto;
+}
+
+header{
+    background-color: var(--color-theme);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.title{
+    font-size: clamp(1rem, 1rem + 1vw, 2rem);
+}
+
+main{
+    padding: 2rem;
+    background-image: url(../images/people.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.formContainer{
+    max-width: 23rem;
+    background-color: #FFFFFFBB;
+    padding: 2rem;
+    float: right;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formContainer h2, .formContainer p{
+    margin-bottom: 1.2rem;
+}
+
+.formContainer form input,.formContainer form select{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.formContainer form select{
+    appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.formContainer form #submit{
+    background-color: var(--color-theme);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+footer {
+    width: clamp(12rem, 12rem + 70vw, 100rem);
+    background-color: rgb(43, 42, 42);
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding:2rem 0;
+}
+
+footer img{
+    width: 14rem;
+    border-radius: 3rem;
+}
+
+footer .speaker{
+    color: white;
+    max-width: 40%;
+}
+
+footer .speaker h2{
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
